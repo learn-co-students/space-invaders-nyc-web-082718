@@ -1,10 +1,5 @@
-// let crewMemberId = 0
-// let store = {crewMembers:[], ships:[]}
-
 class CrewMember {
-
   constructor(position){
-    // this.id = ++crewMemberId
     this.position = position
     this.currentShip = "Looking for a Rig"
   }
@@ -18,9 +13,11 @@ class CrewMember {
   setsInvisibility() {
     if (this.currentShip === "Looking for a Rig") {
       return "had no effect"
+    } else if (this.position === "Defender" ) {
+      this.currentShip.cloaked = true
     }
   }
-
+  
   chargePhasers() {
     if (this.currentShip === "Looking for a Rig") {
       return "had no effect"

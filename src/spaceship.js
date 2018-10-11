@@ -21,4 +21,6 @@ class Spaceship {
       crewMember.currentShip = this
     }.bind(this))
   }
+
+
 }
