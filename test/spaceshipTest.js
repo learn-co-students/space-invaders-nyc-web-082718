@@ -1,4 +1,4 @@
-describe('spaceShip.js', () => {
+describe('spaceShip.js', () => { 
   describe('Spaceship', () => {
     let spaceship;
     beforeEach(() => {
